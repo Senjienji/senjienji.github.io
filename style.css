@@ -69,3 +69,123 @@ li:hover { transform: translateY(-2px); background: #475569; }
 
 /* 6. Footer */
 footer { margin-top: 2rem; color: #64748b; font-size: 0.8rem; }
+
+/* Project Grid Layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Stack on small screens */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Individual Project Cards */
+.project-card {
+  background: #334155;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-card h4 {
+  margin: 0 0 10px 0;
+  color: #38bdf8;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+/* Status Badge (The "Active" tag) */
+.status-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #22c55e;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+/* "View Project" Link styled as a small button */
+.view-btn {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #38bdf8;
+  text-decoration: none;
+  border: 1px solid #38bdf8;
+  padding: 5px 12px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+/* For Desktop: Show cards side-by-side if there's room */
+@media (min-width: 600px) {
+  .card {
+    max-width: 650px;
+  }
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Contact Section Styling */
+.contact-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #334155;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Wraps items on mobile */
+}
+
+.social-item {
+  background: #334155;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #f1f5f9;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.social-item:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+
+.social-item span {
+  margin-right: 5px;
+}
+
+/* Enhanced Footer Styling */
+footer {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  color: #64748b;
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+footer a {
+  color: #94a3b8;
+  font-weight: bold;
+}
